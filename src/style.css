@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+  width: 100vw;
+}
+
+body {
+  position: relative;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+i { pointer-events: none; }
+
+.to_dolist_container {
+  position: relative;
+  width: 50%;
+  margin: 2em auto;
+
+  /* margin: auto; */
+  box-shadow: 0 0 1em rgb(186, 186, 185);
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(186, 186, 183);
+  padding: 0.7em 1em;
+  margin: 0;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#to_doList_form {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid rgb(186, 186, 183);
+}
+
+.to-do-container {
+  position: relative;
+  width: 500px;
+  margin: 2em auto;
+  box-shadow: 0 0 1em rgb(220, 216, 216);
+}
+
+/* .to-do-container > h1 {
+  border-bottom: var(--bottom-line);
+  padding: 0.7em 1em;
+  margin: 0;
+  font-size: 15px;
+  font-weight: normal;
+  background-color:red;
+} */
+
+#to-do-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: var(--bottom-line);
+}
+
+.to_do_input,
+.edit-input {
+  border: 0;
+  padding: 0.7em 1.2em;
+  outline: 0;
+  font-style: italic;
+  font-size: 16px;
+  width: 80%;
+}
+
+.edit-input {
+  font-style: normal;
+  font-size: 15px;
+  background-color:'#f8f8cc';
+}
+
+.svg-inline--fa { color: rgb(185, 185, 185); }
+
+.submit_btn {
+  background-color: inherit;
+
+  /* padding: 10px; */
+  margin-right: 0.5em;
+  border: none;
+}
+
+#to_do_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* background-color:yellow; */
+}
+
+.list_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--bottom-line);
+  padding: 0 1em;
+  
+}
+
+.checkbox_container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox_container p {
+  margin: 0.7em;
+}
+
+.clear_all {
+  width: 100%;
+  text-align: center;
+  border: 0;
+  padding: 1em;
+  background-color: rgb(225, 225, 225);
+  color: rgb(150, 150, 150);
+  font-size: 20px;
+}
+
+button {
+  border: 0;
+  background-color: inherit;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+#submit-button { margin-right: 0.75em; }
+
+.fa-pencil-alt,
+.fa-trash-alt {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.fa-trash-alt { color: rgb(221, 88, 88); }
+
+.fa-pencil-alt:hover,
+.fa-trash-alt:hover {
+  opacity: 1;
+  font-size: 18px;
+}
+
+#to-do-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--bottom-line);
+  padding: 0 0.5em 0 1em;
+}
+
+.checkbox-description-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.checkbox-description-container > p { margin: 0.7em; }
+
+#to-do-clear {
+  width: 100%;
+  text-align: center;
+  border: 0;
+  padding: 1em;
+  background-color: rgb(220, 216, 216);
+  color: rgb(150, 150, 150);
+  font-size: 15px;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.show { display: flex; }
+
+.hidden { display: none; }
+
+.whiteBackground {
+background-color: wheat
+}
+
+.blackBackground {
+  background-color: black
+}
+
+ul li.checked {
+  background: #888;
+  color: red;
+  text-decoration: line-through;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+/* ul li:nth-child(odd) {
+  background: yellow;
+} */
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+input:hover {
+  background-color:#ddd
+}
